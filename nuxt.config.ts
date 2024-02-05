@@ -21,4 +21,10 @@ export default defineNuxtConfig({
       },
     },
   },
+  runtimeConfig: {
+    public : {
+      baseURL: (process.env.NODE_ENV === 'production' ? 'http//your-url' : 'http://localhost:3000'),
+      imgURL: 'https://kp-img01-hkc.azurlane-tcg.com'
+    }
+  }
 })
